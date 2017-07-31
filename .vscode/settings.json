@@ -1,0 +1,12 @@
+{
+  "search.exclude": {
+    ".vscode": false,
+    "dist/": true,
+    "node_modules/": true
+  },
+  "files.exclude": {
+    ".vscode": true,
+    "dist/": true,
+    "node_modules/": true
+  }
+}
