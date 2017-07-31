@@ -6,7 +6,10 @@
     "ng": "ng",
     "start": "node_modules/.bin/serve -p $PORT dist/",
     "start-dev": "ng serve",
-    "build": "ng build",
+    "i18n": "ng xi18n --outputPath src/locale",
+    "build": "bash build.sh",
+    "build-english": "ng build --aot -e prod",
+    "build-portuguese": "ng build --aot  -e prod --locale pt-BR --i18n-file src/locale/messages.pt-BR.xlf",
     "test": "ng test",
     "lint": "ng lint"
   },

@@ -23,14 +23,13 @@ export class Route {
   }
 
   static appRoutes() {
-    const routes = [];
-    _.forEach(Route.routes(), r => {
-      routes.push({
-        path: r.path,
-        component: r.component
-      });
-    });
-    return routes;
+    return [
+      { path: 'profile',  component: c.ProfileComponent },
+      { path: 'work',     component: c.ProfileComponent },
+      { path: 'resume',   component: c.ProfileComponent },
+      { path: 'blog',     component: c.ProfileComponent },
+      { path: 'contact',  component: c.ProfileComponent }
+    ];
   }
 
   constructor(name: string, path: string, icon: string, component: CVComponent) {

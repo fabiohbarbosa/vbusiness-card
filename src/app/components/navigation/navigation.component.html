@@ -1,10 +1,11 @@
 <div class="profile-pic">
-  <div class="pic-bg"><img src="assets/images/fabio.png" class="img-responsive" alt=""/></div>
+  <div class="pic-bg"><img src="assets/images/fabio.png" class="img-responsive" alt="fabiohbarbosa" /></div>
 </div>
 <nav>
   <ul class="navigation">
     <li *ngFor="let route of routes" routerLinkActive="flex-active">
-      <a [routerLink]="route.path"> {{ route.name }}
+      <a [routerLink]="route.path">
+        <span i18n>{{ route.name | translate }}</span>
         <i [ngClass]="route.icon"></i>
       </a>
     </li>

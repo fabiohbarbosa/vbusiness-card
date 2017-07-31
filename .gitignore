@@ -5,6 +5,10 @@ dist
 tmp
 out-tsc
 
+# build
+build
+!build/index.html
+
 # dependencies
 node_modules
 
